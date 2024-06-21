@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Ananke Fr</title>
+    <link>http://localhost:1313/Kwai_kolors/fr/tags/</link>
+    <description>Recent content in Tags on Ananke Fr</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 09 Apr 2017 10:58:08 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/Kwai_kolors/fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scene</title>
+      <link>http://localhost:1313/Kwai_kolors/fr/tags/scene/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Kwai_kolors/fr/tags/scene/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
