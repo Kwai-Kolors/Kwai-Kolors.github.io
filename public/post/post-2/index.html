@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>《Kolors: Unet is enough for diffusion》 | Kolors</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Kolors Team">
+    <meta name="generator" content="Hugo 0.127.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+<link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
+
+
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/post/post-2/">
+  <meta property="og:site_name" content="Kolors">
+  <meta property="og:title" content="《Kolors: Unet is enough for diffusion》">
+  <meta property="og:description" content="Kolors Team">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-06-21T11:00:59-04:00">
+    <meta property="article:modified_time" content="2024-06-21T11:00:59-04:00">
+    <meta property="article:tag" content="Text-to-Image">
+    <meta property="article:tag" content="U-Net">
+
+  <meta itemprop="name" content="《Kolors: Unet is enough for diffusion》">
+  <meta itemprop="description" content="Kolors Team">
+  <meta itemprop="datePublished" content="2024-06-21T11:00:59-04:00">
+  <meta itemprop="dateModified" content="2024-06-21T11:00:59-04:00">
+  <meta itemprop="wordCount" content="590">
+  <meta itemprop="keywords" content="Text-to-Image,U-Net">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="《Kolors: Unet is enough for diffusion》">
+  <meta name="twitter:description" content="Kolors Team">
+
+	<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('http://localhost:1313/images/cvpr2024_learning/cvpr2024_learning_1.png'); height: 80vh; background-size: cover; background-position: center;">
+    <div class="bg-black-60" style="height: 80vh;">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        <img src="/images/logo_thumbnail.png" class="w100 mw5-ns" alt="Kolors" />
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Us page">
+              About Us
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/post/" title="Articles page">
+              Articles
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    <a href="https://github.com/Kwai-Kolors" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns"  style="height: 100%;">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">《Kolors: Unet is enough for diffusion》</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Kolors Team
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        ARTICLES
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">《Kolors: Unet is enough for diffusion》</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2024-06-21T11:00:59-04:00">June 21, 2024</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Nevertheless, as be harangued them, the satisfaction and admiration
+unanimously excited by his costume were dissipated by his words; and when
+he reached that untoward conclusion: “As soon as his illustrious eminence,
+the cardinal, arrives, we will begin,” his voice was drowned in a thunder
+of hooting.</p>
+<p>“Begin instantly! The mystery! the mystery immediately!” shrieked the
+people. And above all the voices, that of Johannes de Molendino was
+audible, piercing the uproar like the fife’s derisive serenade: “Commence
+instantly!” yelped the scholar.</p>
+<p>“Down with Jupiter and the Cardinal de Bourbon!” vociferated Robin
+Poussepain and the other clerks perched in the window.</p>
+<p>“The morality this very instant!” repeated the crowd; “this very instant!
+the sack and the rope for the comedians, and the cardinal!”</p>
+<p>Poor Jupiter, haggard, frightened, pale beneath his rouge, dropped his
+thunderbolt, took his cap in his hand; then he bowed and trembled and
+stammered: “His eminence—the ambassadors—Madame Marguerite of
+Flanders—.” He did not know what to say. In truth, he was afraid of
+being hung.</p>
+<p>Hung by the populace for waiting, hung by the cardinal for not having
+waited, he saw between the two dilemmas only an abyss; that is to say, a
+gallows.</p>
+<p>Luckily, some one came to rescue him from his embarrassment, and assume
+the responsibility.</p>
+<p>An individual who was standing beyond the railing, in the free space
+around the marble table, and whom no one had yet caught sight of, since
+his long, thin body was completely sheltered from every visual ray by the
+diameter of the pillar against which he was leaning; this individual, we
+say, tall, gaunt, pallid, blond, still young, although already wrinkled
+about the brow and cheeks, with brilliant eyes and a smiling mouth, clad
+in garments of black serge, worn and shining with age, approached the
+marble table, and made a sign to the poor sufferer. But the other was so
+confused that he did not see him. The new comer advanced another step.</p>
+<p>“Jupiter,” said he, “my dear Jupiter!”</p>
+<p>The other did not hear.</p>
+<p>At last, the tall blond, driven out of patience, shrieked almost in his
+face,—</p>
+<p>“Michel Giborne!”</p>
+<p>“Who calls me?” said Jupiter, as though awakened with a start.</p>
+<p>“I,” replied the person clad in black.</p>
+<p>“Ah!” said Jupiter.</p>
+<p>“Begin at once,” went on the other. “Satisfy the populace; I undertake to
+appease the bailiff, who will appease monsieur the cardinal.”</p>
+<p>Jupiter breathed once more.</p>
+<p>“Messeigneurs the bourgeois,” he cried, at the top of his lungs to the
+crowd, which continued to hoot him, “we are going to begin at once.”</p>
+<p>“<em>Evoe Jupiter! Plaudite cives</em>! All hail, Jupiter! Applaud,
+citizens!” shouted the scholars.</p>
+<p>“Noel! Noel! good, good,” shouted the people.</p>
+<p>The hand clapping was deafening, and Jupiter had already withdrawn under
+his tapestry, while the hall still trembled with acclamations.</p>
+<p>In the meanwhile, the personage who had so magically turned the tempest
+into dead calm, as our old and dear Corneille puts it, had modestly
+retreated to the half-shadow of his pillar, and would, no doubt, have
+remained invisible there, motionless, and mute as before, had he not been
+plucked by the sleeve by two young women, who, standing in the front row
+of the spectators, had noticed his colloquy with Michel Giborne-Jupiter.</p>
+<p>“Master,” said one of them, making him a sign to approach. “Hold your
+tongue, my dear Liénarde,” said her neighbor, pretty, fresh, and very
+brave, in consequence of being dressed up in her best attire. “He is not a
+clerk, he is a layman; you must not say master to him, but messire.”</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/text-to-image" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Text-to-Image</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/u-net" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">U-Net</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/post/post-1/">《Learning Multi-dimensional Human Preference for Text-to-Image Generation》，CVPR-2024</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  Kolors 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    <a href="https://github.com/Kwai-Kolors" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

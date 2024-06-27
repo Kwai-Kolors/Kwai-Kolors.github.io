@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kolors</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Kolors</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Jun 2024 11:00:59 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《Kolors: Unet is enough for diffusion》</title>
+      <link>http://localhost:1313/post/post-2/</link>
+      <pubDate>Fri, 21 Jun 2024 11:00:59 -0400</pubDate>
+      <guid>http://localhost:1313/post/post-2/</guid>
+      <description>Nevertheless, as be harangued them, the satisfaction and admiration unanimously excited by his costume were dissipated by his words; and when he reached that untoward conclusion: “As soon as his illustrious eminence, the cardinal, arrives, we will begin,” his voice was drowned in a thunder of hooting.&#xA;“Begin instantly! The mystery! the mystery immediately!” shrieked the people. And above all the voices, that of Johannes de Molendino was audible, piercing the uproar like the fife’s derisive serenade: “Commence instantly!</description>
+    </item>
+    <item>
+      <title>《Learning Multi-dimensional Human Preference for Text-to-Image Generation》，CVPR-2024</title>
+      <link>http://localhost:1313/post/post-1/</link>
+      <pubDate>Thu, 20 Jun 2024 10:58:08 -0400</pubDate>
+      <guid>http://localhost:1313/post/post-1/</guid>
+      <description>Three hundred and forty-eight years, six months, and nineteen days ago to-day, the Parisians awoke to the sound of all the bells in the triple circuit of the city, the university, and the town ringing a full peal.&#xA;The sixth of January, 1482, is not, however, a day of which history has preserved the memory. There was nothing notable in the event which thus set the bells and the bourgeois of Paris in a ferment from early morning.</description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>可图团队是一支专注于视觉生成和编辑算法研发的创新团队。我们致力于推动视觉生成技术的前沿发展，并将最新的研究成果应用于实际业务场景中。在可图，我们相信图像不仅仅是视觉信息的载体，更是沟通和表达的强大工具。我们致力于探索和开发能够赋予图像更多可能性的技术，让每一个用户都能轻松地创造出令人惊叹的视觉作品。</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description> If you encounter any issues while using KOLORS, feel free to contact us via email at kolors@kuaishou.com.&#xA;Your Name Email Address An email address is required. Message </description>
+    </item>
+  </channel>
+</rss>
