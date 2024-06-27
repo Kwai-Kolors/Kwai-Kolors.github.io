@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Kolors</title>
-    <link>https://kwai-kolors.github.io/tags/</link>
+    <link>https://Kwai-Kolors.github.io/tags/</link>
     <description>Recent content in Tags on Kolors</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Jun 2024 11:00:59 -0400</lastBuildDate>
-    <atom:link href="https://kwai-kolors.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Kwai-Kolors.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Text-to-Image</title>
-      <link>https://kwai-kolors.github.io/tags/text-to-image/</link>
+      <link>https://Kwai-Kolors.github.io/tags/text-to-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kwai-kolors.github.io/tags/text-to-image/</guid>
+      <guid>https://Kwai-Kolors.github.io/tags/text-to-image/</guid>
       <description></description>
     </item>
     <item>
       <title>U-Net</title>
-      <link>https://kwai-kolors.github.io/tags/u-net/</link>
+      <link>https://Kwai-Kolors.github.io/tags/u-net/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://kwai-kolors.github.io/tags/u-net/</guid>
+      <guid>https://Kwai-Kolors.github.io/tags/u-net/</guid>
       <description></description>
     </item>
   </channel>
