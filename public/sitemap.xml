@@ -2,50 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/post-2/</loc>
+    <loc>https://kwai-kolors.github.io/post/post-2/</loc>
     <lastmod>2024-06-21T11:00:59-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://kwai-kolors.github.io/</loc>
     <lastmod>2024-06-21T11:00:59-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://kwai-kolors.github.io/tags/</loc>
     <lastmod>2024-06-21T11:00:59-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/text-to-image/</loc>
+    <loc>https://kwai-kolors.github.io/tags/text-to-image/</loc>
     <lastmod>2024-06-21T11:00:59-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/u-net/</loc>
+    <loc>https://kwai-kolors.github.io/tags/u-net/</loc>
     <lastmod>2024-06-21T11:00:59-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/post/post-1/</loc>
+    <loc>https://kwai-kolors.github.io/post/post-1/</loc>
     <lastmod>2024-06-20T10:58:08-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://kwai-kolors.github.io/post/</loc>
     <lastmod>2024-06-19T12:00:00-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://kwai-kolors.github.io/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://kwai-kolors.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://kwai-kolors.github.io/contact/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
