@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scene on Ananke Fr</title>
+    <link>http://localhost:1313/Kwai_kolors/fr/tags/scene/</link>
+    <description>Recent content in Scene on Ananke Fr</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 09 Apr 2017 10:58:08 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/Kwai_kolors/fr/tags/scene/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chapitre I: La grande halle</title>
+      <link>http://localhost:1313/Kwai_kolors/fr/post/chapter-1/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      <guid>http://localhost:1313/Kwai_kolors/fr/post/chapter-1/</guid>
+      <description>Généralement, on utilise un texte en faux latin (le texte ne veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui permet donc de faire office de texte d&amp;rsquo;attente. L&amp;rsquo;avantage de le mettre en latin est que l&amp;rsquo;opérateur sait au premier coup d&amp;rsquo;oeil que la page contenant ces lignes n&amp;rsquo;est pas valide, et surtout l&amp;rsquo;attention du client n&amp;rsquo;est pas dérangée par le contenu, il demeure concentré seulement sur l&amp;rsquo;aspect graphique.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ananke: Un thème pour Hugo on Ananke Fr</title>
+    <link>http://localhost:1313/Kwai_kolors/fr/</link>
+    <description>Recent content in Ananke: Un thème pour Hugo on Ananke Fr</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <lastBuildDate>Sun, 09 Apr 2017 10:58:08 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/Kwai_kolors/fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chapitre I: La grande halle</title>
+      <link>http://localhost:1313/Kwai_kolors/fr/post/chapter-1/</link>
+      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
+      <guid>http://localhost:1313/Kwai_kolors/fr/post/chapter-1/</guid>
+      <description>Généralement, on utilise un texte en faux latin (le texte ne veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui permet donc de faire office de texte d&amp;rsquo;attente. L&amp;rsquo;avantage de le mettre en latin est que l&amp;rsquo;opérateur sait au premier coup d&amp;rsquo;oeil que la page contenant ces lignes n&amp;rsquo;est pas valide, et surtout l&amp;rsquo;attention du client n&amp;rsquo;est pas dérangée par le contenu, il demeure concentré seulement sur l&amp;rsquo;aspect graphique.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/Kwai_kolors/fr/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Kwai_kolors/fr/contact/</guid>
+      <description>Ceci est la page de contact en Français.&#xA;This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out Formspree for a simple, free form service.&#xA;Votre nom Adresse e-mail Une adresse e-mail est requise. Message </description>
+    </item>
+  </channel>
+</rss>
