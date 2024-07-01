@@ -20,6 +20,10 @@
 
 
 
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
     
     
     
@@ -47,7 +51,7 @@
   <meta itemprop="description" content="Kolors Team">
   <meta itemprop="datePublished" content="2024-06-21T11:00:59-04:00">
   <meta itemprop="dateModified" content="2024-06-21T11:00:59-04:00">
-  <meta itemprop="wordCount" content="590">
+  <meta itemprop="wordCount" content="792">
   <meta itemprop="keywords" content="Text-to-Image,U-Net">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="《Kolors: Unet is enough for diffusion》">
@@ -67,7 +71,7 @@
   
 
   
-  <header class="cover bg-top" style="background-image: url('https://Kwai-Kolors.github.io/images/kolors-3b/background_55.png'); height: 80vh; background-size: cover; background-position: center;">
+  <header class="cover bg-top" style="background-image: url('https://Kwai-Kolors.github.io/images/post-2.png'); height: 80vh; background-size: cover; background-position: center;">
     <div class="bg-black-60" style="height: 80vh;">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -173,66 +177,187 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Nevertheless, as be harangued them, the satisfaction and admiration
-unanimously excited by his costume were dissipated by his words; and when
-he reached that untoward conclusion: “As soon as his illustrious eminence,
-the cardinal, arrives, we will begin,” his voice was drowned in a thunder
-of hooting.</p>
-<p>“Begin instantly! The mystery! the mystery immediately!” shrieked the
-people. And above all the voices, that of Johannes de Molendino was
-audible, piercing the uproar like the fife’s derisive serenade: “Commence
-instantly!” yelped the scholar.</p>
-<p>“Down with Jupiter and the Cardinal de Bourbon!” vociferated Robin
-Poussepain and the other clerks perched in the window.</p>
-<p>“The morality this very instant!” repeated the crowd; “this very instant!
-the sack and the rope for the comedians, and the cardinal!”</p>
-<p>Poor Jupiter, haggard, frightened, pale beneath his rouge, dropped his
-thunderbolt, took his cap in his hand; then he bowed and trembled and
-stammered: “His eminence—the ambassadors—Madame Marguerite of
-Flanders—.” He did not know what to say. In truth, he was afraid of
-being hung.</p>
-<p>Hung by the populace for waiting, hung by the cardinal for not having
-waited, he saw between the two dilemmas only an abyss; that is to say, a
-gallows.</p>
-<p>Luckily, some one came to rescue him from his embarrassment, and assume
-the responsibility.</p>
-<p>An individual who was standing beyond the railing, in the free space
-around the marble table, and whom no one had yet caught sight of, since
-his long, thin body was completely sheltered from every visual ray by the
-diameter of the pillar against which he was leaning; this individual, we
-say, tall, gaunt, pallid, blond, still young, although already wrinkled
-about the brow and cheeks, with brilliant eyes and a smiling mouth, clad
-in garments of black serge, worn and shining with age, approached the
-marble table, and made a sign to the poor sufferer. But the other was so
-confused that he did not see him. The new comer advanced another step.</p>
-<p>“Jupiter,” said he, “my dear Jupiter!”</p>
-<p>The other did not hear.</p>
-<p>At last, the tall blond, driven out of patience, shrieked almost in his
-face,—</p>
-<p>“Michel Giborne!”</p>
-<p>“Who calls me?” said Jupiter, as though awakened with a start.</p>
-<p>“I,” replied the person clad in black.</p>
-<p>“Ah!” said Jupiter.</p>
-<p>“Begin at once,” went on the other. “Satisfy the populace; I undertake to
-appease the bailiff, who will appease monsieur the cardinal.”</p>
-<p>Jupiter breathed once more.</p>
-<p>“Messeigneurs the bourgeois,” he cried, at the top of his lungs to the
-crowd, which continued to hoot him, “we are going to begin at once.”</p>
-<p>“<em>Evoe Jupiter! Plaudite cives</em>! All hail, Jupiter! Applaud,
-citizens!” shouted the scholars.</p>
-<p>“Noel! Noel! good, good,” shouted the people.</p>
-<p>The hand clapping was deafening, and Jupiter had already withdrawn under
-his tapestry, while the hall still trembled with acclamations.</p>
-<p>In the meanwhile, the personage who had so magically turned the tempest
-into dead calm, as our old and dear Corneille puts it, had modestly
-retreated to the half-shadow of his pillar, and would, no doubt, have
-remained invisible there, motionless, and mute as before, had he not been
-plucked by the sleeve by two young women, who, standing in the front row
-of the spectators, had noticed his colloquy with Michel Giborne-Jupiter.</p>
-<p>“Master,” said one of them, making him a sign to approach. “Hold your
-tongue, my dear Liénarde,” said her neighbor, pretty, fresh, and very
-brave, in consequence of being dressed up in her best attire. “He is not a
-clerk, he is a layman; you must not say master to him, but messire.”</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="/post/post-2/#-model-introduction">📖 Model Introduction</a></li>
+<li><a href="/post/post-2/#-evaluation-performance-">📊 Evaluation Performance 🥇🥇🔥🔥</a></li>
+<li><a href="/post/post-2/#-visualization">🎥 Visualization</a></li>
+<li><a href="/post/post-2/#-quick-start">🛠️ Quick Start</a></li>
+<li><a href="/post/post-2/#-license-and-citation">📜 License and Citation</a></li>
+</ul>
+<p><img alt="header" src="/images/post-2/post-2.png"></p>
+<h2 id="-model-introduction">📖 Model Introduction</h2>
+<p>We have open-sourced the <strong>Kolors</strong> large model, which is a large-scale text-to-image generation model based on latent diffusion. The current open-source model has 2.7 billion parameters. Kolors is trained on billions of text-image pairs and demonstrates significant advantages in visual quality, complex semantic understanding, and even text generation (Chinese and English characters) compared to both open-source and closed-source models. Additionally, Kolors supports both Chinese and English, making it more competitive in understanding Chinese-specific content. The model link is provided in the table below; please click to learn more. We have also released our <strong><a href="https://kolors.kuaishou.com/">technical report</a></strong>; please click the paper link above to view it.</p>
+<h2 id="-evaluation-performance">📊 Evaluation Performance</h2>
+<p>To comprehensively compare Kolors with other models, we built a comprehensive evaluation that includes both human and machine assessments.
+In relevant benchmark evaluations, Kolors shows very competitive performance, significantly surpassing industry open-source and closed-source models.</p>
+<h3 id="human-evaluation">Human Evaluation</h3>
+<p>We constructed a text-to-image evaluation set Kolors-1488 with 14 categories, 12 challenge items, and a total of 1488 prompts. We obtained text-to-image results from SOTA-level open-source and closed-source systems available on the market. Each model/system generates 4 images per prompt.
+We invited 50 professional evaluators with knowledge in the image field to compare and assess the text-to-image results, scoring the generated images based on three dimensions: image quality, text-image relevance, and overall satisfaction.
+Kolors achieved the highest level of overall satisfaction, with significantly better image quality compared to other models.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Model</th>
+<th style="text-align:center">Overall Satisfaction</th>
+<th style="text-align:center">Visual Appeal</th>
+<th style="text-align:center">Text Faithfulness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Adobe-Firefly</td>
+<td style="text-align:center">3.03</td>
+<td style="text-align:center">3.46</td>
+<td style="text-align:center">3.84</td>
+</tr>
+<tr>
+<td style="text-align:center">StableDiffusion3</td>
+<td style="text-align:center">3.26</td>
+<td style="text-align:center">3.5</td>
+<td style="text-align:center">4.20</td>
+</tr>
+<tr>
+<td style="text-align:center">DALLE 3</td>
+<td style="text-align:center">3.32</td>
+<td style="text-align:center">3.54</td>
+<td style="text-align:center"><strong>4.22</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">MidJourney-v5</td>
+<td style="text-align:center">3.32</td>
+<td style="text-align:center">3.68</td>
+<td style="text-align:center">4.02</td>
+</tr>
+<tr>
+<td style="text-align:center">Playground-v2.5</td>
+<td style="text-align:center">3.37</td>
+<td style="text-align:center">3.73</td>
+<td style="text-align:center">4.04</td>
+</tr>
+<tr>
+<td style="text-align:center">MidJourney-v6</td>
+<td style="text-align:center">3.58</td>
+<td style="text-align:center">3.92</td>
+<td style="text-align:center">4.18</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Kolors</strong></td>
+<td style="text-align:center"><strong>3.59</strong></td>
+<td style="text-align:center"><strong>3.99</strong></td>
+<td style="text-align:center"><strong>4.17</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>All model results are from the product versions as of April 2024</strong></p>
+<p>Evaluation Criteria:</p>
+<ol>
+<li>Relevance:
+<ol>
+<li>Content Relevance: Whether the generated image accurately expresses the content of the text prompt</li>
+<li>Style Relevance: If the text prompt specifies a certain style, such as &ldquo;watercolor style&rdquo; or &ldquo;realistic style,&rdquo; the relevance of the generated result to the style instruction should be considered</li>
+</ol>
+</li>
+<li>Image Quality:
+<ol>
+<li>Image Fidelity (Realism): Emphasizes realism, avoiding obvious flaws that make the image look fake or unnatural</li>
+<li>Image Content Quality: The clarity, completeness, and integrity of objects/faces in the image</li>
+<li>Image Aesthetics: The overall aesthetic appeal of the image, avoiding scenarios that appear &ldquo;chaotic&rdquo; or &ldquo;unpleasant&rdquo;</li>
+</ol>
+</li>
+</ol>
+<h4 id="mps">MPS</h4>
+<p>MPS (Multi-dimensional Human Preference Score) is a multi-dimensional text-to-image evaluation model that has proven effective on various text-to-image evaluation benchmarks. We also use MPS to evaluate the models mentioned above.
+Using <strong>Kolors-1488</strong> as the base evaluation dataset, we calculated the MPS metrics for multiple models. Kolors achieved the highest MPS metric, consistent with human evaluation metrics.</p>
+<table>
+<thead>
+<tr>
+<th>Models</th>
+<th>Overall MPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Playground-v2.5</td>
+<td>0.0635</td>
+</tr>
+<tr>
+<td>MidJourney-v5</td>
+<td>0.0324</td>
+</tr>
+<tr>
+<td>MidJourney-v6</td>
+<td>0.0587</td>
+</tr>
+<tr>
+<td>DALLE 3</td>
+<td>0.0514</td>
+</tr>
+<tr>
+<td>StableDiffusion3</td>
+<td>0.0669</td>
+</tr>
+<tr>
+<td>Adobe-Firefly</td>
+<td>0.0452</td>
+</tr>
+<tr>
+<td>Kolors</td>
+<td>0.0687</td>
+</tr>
+</tbody>
+</table>
+<p>For more experimental results and details, please refer to our technical report. Click <a href="/">here</a>.</p>
+<h2 id="-visualization">🎥 Visualization</h2>
+<p><strong>High-Quality Portraits</strong></p>
+<p><img alt="High-Quality Portraits" src="/images/post-2/rx_all.png"></p>
+<p><strong>Chinese Elements</strong></p>
+<p><img alt="Chinese Elements" src="/images/post-2/cn_all.png"></p>
+<p><strong>Complex Semantic Understanding</strong></p>
+<p><img alt="Complex Semantic Understanding" src="/images/post-2/fz_all.png"></p>
+<p><strong>Text Rendering</strong></p>
+<p><img alt="Text Rendering" src="/images/post-2/wz_all.png"></p>
+<p>You can obtain the visualization case prompts by clicking <a href="https://github.com/Kwai-Kolors/Kolors-3B/blob/main/imgs/prompt_vis.txt">visualization prompts</a>.</p>
+<h2 id="-quick-start">🛠️ Quick Start</h2>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>python 3.8 or above</li>
+<li>pytorch 2.0.1 or above</li>
+<li>transformers 4.29.1 or above</li>
+<li>Recommended to use CUDA 11.7 or above</li>
+</ul>
+<ol>
+<li>Clone the repository and install dependencies
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/Kwai-Kolors/Kolors-3B
+</span></span><span style="display:flex;"><span>cd Kolors-3B
+</span></span><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span><span style="display:flex;"><span>python3 setup.py install
+</span></span></code></pre></div></li>
+<li>Download model weights (<a href="https://huggingface.co/Kwai-Kolors/Kolors-3B">link</a>):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://huggingface.co/Kwai-Kolors/Kolors-3B weights/
+</span></span></code></pre></div></li>
+<li>Model inference:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 scripts/sample.py <span style="color:#e6db74">&#34;Braised pork, close-up, looks appetizing&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The image will be saved to &#34;scripts/outputs/sample_text.jpg&#34;</span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="-license-and-citation">📜 License and Citation</h2>
+<h3 id="license">License</h3>
+<p><strong>Kolors</strong> weights are fully open for academic research. For commercial use, please fill out the questionnaire for free registration.</p>
+<p>This open-source model aims to promote the development of large text-to-image models in collaboration with the open-source community. We urge all developers and users to strictly adhere to the <a href="MODEL_LICENSE">open-source license</a>, avoiding the use of the open-source model, code, and its derivatives for any purposes that may harm the country and society or for any services not evaluated and registered for safety. Note that despite our best efforts to ensure the compliance, accuracy, and safety of the data during training, due to the diversity and combinability of generated content and the probabilistic randomness affecting the model, we cannot guarantee the accuracy and safety of the output content, and the model is susceptible to misleading. This project does not assume any legal responsibility for any data security issues, public opinion risks, or risks and liabilities arising from the model being misled, abused, misused, or improperly utilized due to the use of the open-source model and code.</p>
+<h3 id="citation">Citation</h3>
+<p>If you find our work helpful, please cite it!</p>
+<pre tabindex="0"><code>@article{kolors,
+  title={Kolors Technical Report},
+  author={},
+  journal={arXiv preprint arXiv:},
+  year={2024}
+}
+</code></pre><h3 id="acknowledgments">Acknowledgments</h3>
+<ul>
+<li>Thanks to <a href="https://github.com/huggingface/diffusers">Diffusers</a> for providing the codebase.</li>
+<li>Thanks to <a href="https://github.com/THUDM/ChatGLM3">chatGLMv3</a> for providing the powerful Chinese language model.</li>
+</ul>
 <ul class="pa0">
   
    <li class="list di">
