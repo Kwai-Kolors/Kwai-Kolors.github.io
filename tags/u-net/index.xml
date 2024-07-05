@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 21 Jun 2024 11:00:59 -0400</lastBuildDate>
     <atom:link href="https://Kwai-Kolors.github.io/tags/u-net/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Kolors: Unet is enough for diffusion (arXiv-2024)</title>
+      <title>Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024)</title>
       <link>https://Kwai-Kolors.github.io/post/post-2/</link>
       <pubDate>Fri, 21 Jun 2024 11:00:59 -0400</pubDate>
       <guid>https://Kwai-Kolors.github.io/post/post-2/</guid>
-      <description>We have open-sourced the &lt;strong&gt;Kolors&lt;/strong&gt; large model, which is a large-scale text-to-image generation model based on latent diffusion. The current open-source model has 2.7 billion parameters. Kolors is trained on billions of text-image pairs and demonstrates significant advantages in visual quality, complex semantic understanding, and even text generation (Chinese and English characters) compared to both open-source and closed-source models. Additionally, Kolors supports both Chinese and English, making it more competitive in understanding Chinese-specific content. The model link is provided in the table below; please click to learn more.</description>
+      <description>Kolors is a large-scale text-to-image generation model based on latent diffusion, developed by the Kuaishou Kolors team. Trained on billions of text-image pairs, Kolors exhibits significant advantages over both open-source and proprietary models in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. Furthermore, Kolors supports both Chinese and English inputs, demonstrating strong performance in understanding and generating Chinese-specific content. For more details, please refer to this &lt;strong&gt;&lt;a href=&#34;https://kolors.kuaishou.com/&#34;&gt;technical report&lt;/a&gt;&lt;/strong&gt;.</description>
     </item>
   </channel>
 </rss>

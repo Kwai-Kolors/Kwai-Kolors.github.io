@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Kolors: Unet is enough for diffusion (arXiv-2024) | Kolors</title>
+    <title>Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024) | Kolors</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Kolors Team">
     <meta name="generator" content="Hugo 0.127.0">
@@ -37,7 +37,7 @@
     
     <meta property="og:url" content="https://Kwai-Kolors.github.io/post/post-2/">
   <meta property="og:site_name" content="Kolors">
-  <meta property="og:title" content="Kolors: Unet is enough for diffusion (arXiv-2024)">
+  <meta property="og:title" content="Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024)">
   <meta property="og:description" content="Kolors Team">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
@@ -47,14 +47,14 @@
     <meta property="article:tag" content="Text-to-Image">
     <meta property="article:tag" content="U-Net">
 
-  <meta itemprop="name" content="Kolors: Unet is enough for diffusion (arXiv-2024)">
+  <meta itemprop="name" content="Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024)">
   <meta itemprop="description" content="Kolors Team">
   <meta itemprop="datePublished" content="2024-06-21T11:00:59-04:00">
   <meta itemprop="dateModified" content="2024-06-21T11:00:59-04:00">
-  <meta itemprop="wordCount" content="792">
+  <meta itemprop="wordCount" content="678">
   <meta itemprop="keywords" content="Text-to-Image,U-Net">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Kolors: Unet is enough for diffusion (arXiv-2024)">
+  <meta name="twitter:title" content="Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024)">
   <meta name="twitter:description" content="Kolors Team">
 
 	<link rel="shortcut icon" href="/favicon/favicon.ico" />
@@ -138,7 +138,7 @@
 
       <div class="tc-l pv6 ph3 ph4-ns"  style="height: 100%;">
         
-          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Kolors: Unet is enough for diffusion (arXiv-2024)</h1>
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024)</h1>
           
             <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
               Kolors Team
@@ -176,7 +176,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Kolors: Unet is enough for diffusion (arXiv-2024)</h1>
+      <h1 class="f1 athelas mt3 mb1">Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024)</h1>
       
       
       
@@ -186,24 +186,24 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="table-of-contents">Table of Contents</h2>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="contents">Contents</h2>
 <ul>
-<li><a href="/post/post-2/#-model-introduction">📖 Model Introduction</a></li>
+<li><a href="/post/post-2/#-introduction">📖 Introduction</a></li>
 <li><a href="/post/post-2/#-evaluation-performance-">📊 Evaluation Performance 🥇🥇🔥🔥</a></li>
 <li><a href="/post/post-2/#-visualization">🎥 Visualization</a></li>
 <li><a href="/post/post-2/#-quick-start">🛠️ Quick Start</a></li>
 <li><a href="/post/post-2/#-license-and-citation">📜 License and Citation</a></li>
 </ul>
-<p><img alt="header" src="/images/post-2/post-2.png"></p>
-<h2 id="-model-introduction">📖 Model Introduction</h2>
-<p>We have open-sourced the <strong>Kolors</strong> large model, which is a large-scale text-to-image generation model based on latent diffusion. The current open-source model has 2.7 billion parameters. Kolors is trained on billions of text-image pairs and demonstrates significant advantages in visual quality, complex semantic understanding, and even text generation (Chinese and English characters) compared to both open-source and closed-source models. Additionally, Kolors supports both Chinese and English, making it more competitive in understanding Chinese-specific content. The model link is provided in the table below; please click to learn more. We have also released our <strong><a href="https://kolors.kuaishou.com/">technical report</a></strong>; please click the paper link above to view it.</p>
-<h2 id="-evaluation-performance">📊 Evaluation Performance</h2>
-<p>To comprehensively compare Kolors with other models, we built a comprehensive evaluation that includes both human and machine assessments.
-In relevant benchmark evaluations, Kolors shows very competitive performance, significantly surpassing industry open-source and closed-source models.</p>
-<h3 id="human-evaluation">Human Evaluation</h3>
-<p>We constructed a text-to-image evaluation set Kolors-1488 with 14 categories, 12 challenge items, and a total of 1488 prompts. We obtained text-to-image results from SOTA-level open-source and closed-source systems available on the market. Each model/system generates 4 images per prompt.
-We invited 50 professional evaluators with knowledge in the image field to compare and assess the text-to-image results, scoring the generated images based on three dimensions: image quality, text-image relevance, and overall satisfaction.
-Kolors achieved the highest level of overall satisfaction, with significantly better image quality compared to other models.</p>
+<p><img alt="header" src="/images/post-2/post-2.png">
+<br><br></p>
+<h2 id="-introduction">📖 Introduction</h2>
+<p><strong>Kolors</strong> is a large-scale text-to-image generation model based on latent diffusion, developed by the Kuaishou Kolors team. Trained on billions of text-image pairs, Kolors exhibits significant advantages over both open-source and proprietary models in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. Furthermore, Kolors supports both Chinese and English inputs, demonstrating strong performance in understanding and generating Chinese-specific content. For more details, please refer to this <strong><a href="https://kolors.kuaishou.com/">technical report</a></strong>.
+<br><br></p>
+<h2 id="-evaluation">📊 Evaluation</h2>
+<p>We have collected a comprehensive text-to-image evaluation dataset named KolorsPrompts to compare Kolors with other state-of-the-art open-source and proprietary text-to-image models. KolorsPrompts includes over 1,000 prompts across 14 catagories and 12 evaluation dimensions. The evaluation process incorporates both human and machine assessments. In relevant benchmark evaluations, Kolors demonstrated highly competitive performance, achieving industry-leading standards.
+<br><br></p>
+<h3 id="human-assement">Human Assement</h3>
+<p>For the human evaluation, we invited 50 imagery experts to conduct comparative evaluations of the results generated by different models. The experts rated the generated images based on three criteria: visual appeal, text faithfulness, and overall satisfaction. In the evaluation, Kolors achieved the highest overall satisfaction score and significantly led in visual appeal compared to other models.</p>
 <table>
 <thead>
 <tr>
@@ -258,26 +258,10 @@ Kolors achieved the highest level of overall satisfaction, with significantly be
 </tr>
 </tbody>
 </table>
-<p><strong>All model results are from the product versions as of April 2024</strong></p>
-<p>Evaluation Criteria:</p>
-<ol>
-<li>Relevance:
-<ol>
-<li>Content Relevance: Whether the generated image accurately expresses the content of the text prompt</li>
-<li>Style Relevance: If the text prompt specifies a certain style, such as &ldquo;watercolor style&rdquo; or &ldquo;realistic style,&rdquo; the relevance of the generated result to the style instruction should be considered</li>
-</ol>
-</li>
-<li>Image Quality:
-<ol>
-<li>Image Fidelity (Realism): Emphasizes realism, avoiding obvious flaws that make the image look fake or unnatural</li>
-<li>Image Content Quality: The clarity, completeness, and integrity of objects/faces in the image</li>
-<li>Image Aesthetics: The overall aesthetic appeal of the image, avoiding scenarios that appear &ldquo;chaotic&rdquo; or &ldquo;unpleasant&rdquo;</li>
-</ol>
-</li>
-</ol>
-<h4 id="mps">MPS</h4>
-<p>MPS (Multi-dimensional Human Preference Score) is a multi-dimensional text-to-image evaluation model that has proven effective on various text-to-image evaluation benchmarks. We also use MPS to evaluate the models mentioned above.
-Using <strong>Kolors-1488</strong> as the base evaluation dataset, we calculated the MPS metrics for multiple models. Kolors achieved the highest MPS metric, consistent with human evaluation metrics.</p>
+<p><strong>All model results are taken from the April 2024 product versions</strong>
+<br><br></p>
+<h3 id="machine-assessment">Machine Assessment</h3>
+<p>We used <a href="https://arxiv.org/abs/2405.14705">MPS</a> (Multi-dimensional Human Preference Score) on <em>KolorsPrompts</em> as the evaluation metric for machine assessment. Kolors achieved the highest MPS score, which is consistent with the results of the human evaluations.</p>
 <table>
 <thead>
 <tr>
@@ -288,72 +272,79 @@ Using <strong>Kolors-1488</strong> as the base evaluation dataset, we calculated
 <tbody>
 <tr>
 <td>Playground-v2.5</td>
-<td>0.0635</td>
+<td>8.5</td>
 </tr>
 <tr>
 <td>MidJourney-v5</td>
-<td>0.0324</td>
+<td>8.9</td>
 </tr>
 <tr>
 <td>MidJourney-v6</td>
-<td>0.0587</td>
+<td>9.0</td>
 </tr>
 <tr>
 <td>DALLE 3</td>
-<td>0.0514</td>
+<td>9.4</td>
 </tr>
 <tr>
 <td>StableDiffusion3</td>
-<td>0.0669</td>
+<td>9.8</td>
 </tr>
 <tr>
 <td>Adobe-Firefly</td>
-<td>0.0452</td>
+<td>10.2</td>
 </tr>
 <tr>
-<td>Kolors</td>
-<td>0.0687</td>
+<td><strong>Kolors</strong></td>
+<td><strong>10.3</strong></td>
 </tr>
 </tbody>
 </table>
-<p>For more experimental results and details, please refer to our technical report. Click <a href="/">here</a>.</p>
+<p>For more experimental results and details, please refer to our <span style="color: red;"><a href="/">technical report</a></span>.
+<br><br></p>
 <h2 id="-visualization">🎥 Visualization</h2>
 <p><strong>High-Quality Portraits</strong></p>
-<p><img alt="High-Quality Portraits" src="/images/post-2/rx_all.png"></p>
+<p><img alt="High-Quality Portraits" src="/images/post-2/zl8.png"></p>
 <p><strong>Chinese Elements</strong></p>
 <p><img alt="Chinese Elements" src="/images/post-2/cn_all.png"></p>
 <p><strong>Complex Semantic Understanding</strong></p>
 <p><img alt="Complex Semantic Understanding" src="/images/post-2/fz_all.png"></p>
 <p><strong>Text Rendering</strong></p>
 <p><img alt="Text Rendering" src="/images/post-2/wz_all.png"></p>
-<p>You can obtain the visualization case prompts by clicking <a href="https://github.com/Kwai-Kolors/Kolors-3B/blob/main/imgs/prompt_vis.txt">visualization prompts</a>.</p>
+<p>The visualized case prompts mentioned above can be accessed <a href="https://github.com/Kwai-Kolors/Kolors/blob/main/imgs/prompt_vis.txt">here</a>.
+<br><br></p>
 <h2 id="-quick-start">🛠️ Quick Start</h2>
 <h3 id="requirements">Requirements</h3>
 <ul>
 <li>python 3.8 or above</li>
-<li>pytorch 2.0.1 or above</li>
-<li>transformers 4.29.1 or above</li>
+<li>pytorch 1.13.1 or above</li>
+<li>transformers 4.26.1 or above</li>
 <li>Recommended to use CUDA 11.7 or above</li>
 </ul>
 <ol>
 <li>Clone the repository and install dependencies
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/Kwai-Kolors/Kolors-3B
-</span></span><span style="display:flex;"><span>cd Kolors-3B
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get install git-lfs
+</span></span><span style="display:flex;"><span>git clone https://github.com/Kwai-Kolors/Kolors
+</span></span><span style="display:flex;"><span>cd Kolors
+</span></span><span style="display:flex;"><span>conda create --name kolors python<span style="color:#f92672">=</span>3.8
+</span></span><span style="display:flex;"><span>conda activate kolors
 </span></span><span style="display:flex;"><span>pip install -r requirements.txt
 </span></span><span style="display:flex;"><span>python3 setup.py install
 </span></span></code></pre></div></li>
-<li>Download model weights (<a href="https://huggingface.co/Kwai-Kolors/Kolors-3B">link</a>):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://huggingface.co/Kwai-Kolors/Kolors-3B weights/
+<li>Weights download (<a href="https://huggingface.co/Kwai-Kolors/Kolors">link</a>):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git lfs clone https://huggingface.co/Kwai-Kolors/Kolors weights/Kolors
 </span></span></code></pre></div></li>
 <li>Model inference:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 scripts/sample.py <span style="color:#e6db74">&#34;Braised pork, close-up, looks appetizing&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># The image will be saved to &#34;scripts/outputs/sample_text.jpg&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The image will be saved to &#34;scripts/outputs/sample_test.jpg&#34;</span>
 </span></span></code></pre></div></li>
 </ol>
+<p><br><br></p>
 <h2 id="-license-and-citation">📜 License and Citation</h2>
 <h3 id="license">License</h3>
-<p><strong>Kolors</strong> weights are fully open for academic research. For commercial use, please fill out the questionnaire for free registration.</p>
-<p>This open-source model aims to promote the development of large text-to-image models in collaboration with the open-source community. We urge all developers and users to strictly adhere to the <a href="MODEL_LICENSE">open-source license</a>, avoiding the use of the open-source model, code, and its derivatives for any purposes that may harm the country and society or for any services not evaluated and registered for safety. Note that despite our best efforts to ensure the compliance, accuracy, and safety of the data during training, due to the diversity and combinability of generated content and the probabilistic randomness affecting the model, we cannot guarantee the accuracy and safety of the output content, and the model is susceptible to misleading. This project does not assume any legal responsibility for any data security issues, public opinion risks, or risks and liabilities arising from the model being misled, abused, misused, or improperly utilized due to the use of the open-source model and code.</p>
+<p>Kolors are fully open-sourced for academic research. For commercial use, please fill out this <a href="https://github.com/Kwai-Kolors/Kolors/blob/main/imgs/%E5%8F%AF%E5%9B%BEKOLORS%E6%A8%A1%E5%9E%8B%E5%95%86%E4%B8%9A%E6%8E%88%E6%9D%83%E7%94%B3%E8%AF%B7%E4%B9%A6.docx">questionnaire</a> and sent it to <a href="mailto:kwai-kolors@kuaishou.com">kwai-kolors@kuaishou.com</a> for registration.</p>
+<p>We open-source Kolors to promote the development of large text-to-image models in collaboration with the open-source community. The code of this project is open-sourced under the Apache-2.0 license. We sincerely urge all developers and users to strictly adhere to the <a href="MODEL_LICENSE">open-source license</a>, avoiding the use of the open-source model, code, and its derivatives for any purposes that may harm the country and society or for any services not evaluated and registered for safety. Note that despite our best efforts to ensure the compliance, accuracy, and safety of the data during training, due to the diversity and combinability of generated content and the probabilistic randomness affecting the model, we cannot guarantee the accuracy and safety of the output content, and the model is susceptible to misleading. This project does not assume any legal responsibility for any data security issues, public opinion risks, or risks and liabilities arising from the model being misled, abused, misused, or improperly utilized due to the use of the open-source model and code.
+<br><br></p>
 <h3 id="citation">Citation</h3>
 <p>If you find our work helpful, please cite it!</p>
 <pre tabindex="0"><code>@article{kolors,
@@ -362,11 +353,15 @@ Using <strong>Kolors-1488</strong> as the base evaluation dataset, we calculated
   journal={arXiv preprint arXiv:},
   year={2024}
 }
-</code></pre><h3 id="acknowledgments">Acknowledgments</h3>
+</code></pre><p><br><br></p>
+<h3 id="acknowledgments">Acknowledgments</h3>
 <ul>
 <li>Thanks to <a href="https://github.com/huggingface/diffusers">Diffusers</a> for providing the codebase.</li>
-<li>Thanks to <a href="https://github.com/THUDM/ChatGLM3">chatGLMv3</a> for providing the powerful Chinese language model.</li>
+<li>Thanks to <a href="https://github.com/THUDM/ChatGLM3">ChatGLM3</a> for providing the powerful Chinese language model.
+<br><br></li>
 </ul>
+<h3 id="contact-us">Contact Us</h3>
+<p>If you want to leave a message for our R&amp;D team and product team, feel free to join our <a href="https://github.com/Kwai-Kolors/Kolors/blob/main/imgs/wechat.png">WeChat group</a>. You can also contact us via email (<a href="mailto:kwai-kolors@kuaishou.com">kwai-kolors@kuaishou.com</a>).</p>
 <ul class="pa0">
   
    <li class="list di">
