@@ -13,7 +13,7 @@
       <link>https://Kwai-Kolors.github.io/post/post-2/</link>
       <pubDate>Fri, 21 Jun 2024 11:00:59 -0400</pubDate>
       <guid>https://Kwai-Kolors.github.io/post/post-2/</guid>
-      <description>Kolors is a large-scale text-to-image generation model based on latent diffusion, developed by the Kuaishou Kolors team. Trained on billions of text-image pairs, Kolors exhibits significant advantages over both open-source and proprietary models in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. Furthermore, Kolors supports both Chinese and English inputs, demonstrating strong performance in understanding and generating Chinese-specific content. For more details, please refer to this &lt;strong&gt;&lt;a href=&#34;https://kolors.kuaishou.com/&#34;&gt;technical report&lt;/a&gt;&lt;/strong&gt;.</description>
+      <description>Kolors is a large-scale text-to-image generation model based on latent diffusion, developed by the Kuaishou Kolors team. Trained on billions of text-image pairs, Kolors exhibits significant advantages over both open-source and proprietary models in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. Furthermore, Kolors supports both Chinese and English inputs, demonstrating strong performance in understanding and generating Chinese-specific content. For more details, please refer to this &lt;strong&gt;&lt;a href=&#34;https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf&#34;&gt;technical report&lt;/a&gt;&lt;/strong&gt;.</description>
     </item>
     <item>
       <title>Learning Multi-dimensional Human Preference for Text-to-Image Generation (CVPR-2024)</title>
