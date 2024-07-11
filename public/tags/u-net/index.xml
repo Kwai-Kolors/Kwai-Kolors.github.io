@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>U-Net on Kolors</title>
-    <link>https://kwai-kolors.github.io/tags/u-net/</link>
+    <link>https://Kwai-Kolors.github.io/tags/u-net/</link>
     <description>Recent content in U-Net on Kolors</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Jun 2024 11:00:59 -0400</lastBuildDate>
-    <atom:link href="https://kwai-kolors.github.io/tags/u-net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Kwai-Kolors.github.io/tags/u-net/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>《Kolors: Unet is enough for diffusion》</title>
-      <link>https://kwai-kolors.github.io/post/post-2/</link>
+      <title>Kolors: Effective Training of Diffusion Model for Photorealistic Text-to-Image Synthesis (arXiv-2024)</title>
+      <link>https://Kwai-Kolors.github.io/post/post-2/</link>
       <pubDate>Fri, 21 Jun 2024 11:00:59 -0400</pubDate>
-      <guid>https://kwai-kolors.github.io/post/post-2/</guid>
-      <description>Nevertheless, as be harangued them, the satisfaction and admiration unanimously excited by his costume were dissipated by his words; and when he reached that untoward conclusion: “As soon as his illustrious eminence, the cardinal, arrives, we will begin,” his voice was drowned in a thunder of hooting.&#xA;“Begin instantly! The mystery! the mystery immediately!” shrieked the people. And above all the voices, that of Johannes de Molendino was audible, piercing the uproar like the fife’s derisive serenade: “Commence instantly!</description>
+      <guid>https://Kwai-Kolors.github.io/post/post-2/</guid>
+      <description>Kolors is a large-scale text-to-image generation model based on latent diffusion, developed by the Kuaishou Kolors team. Trained on billions of text-image pairs, Kolors exhibits significant advantages over both open-source and proprietary models in visual quality, complex semantic accuracy, and text rendering for both Chinese and English characters. Furthermore, Kolors supports both Chinese and English inputs, demonstrating strong performance in understanding and generating Chinese-specific content. For more details, please refer to this &lt;strong&gt;&lt;a href=&#34;https://github.com/Kwai-Kolors/Kolors/blob/master/imgs/Kolors_paper.pdf&#34;&gt;technical report&lt;/a&gt;&lt;/strong&gt;.</description>
     </item>
   </channel>
 </rss>

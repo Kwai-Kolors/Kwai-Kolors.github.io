@@ -21,7 +21,7 @@
     <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}" style="height: 80vh;">
       {{ partial "site-navigation.html" . }}
       <div class="tc-l pv3 ph3 ph4-ns" style="height: 100%;">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title" style="font-weight: bold;">
           {{ .Title | default .Site.Title }}
         </h1>
         {{ with .Params.description }}

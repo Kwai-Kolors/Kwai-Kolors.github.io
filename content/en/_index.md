@@ -7,9 +7,5 @@ theme_version: '2.8.2'
 cascade:
   featured_image: '/images/background.png'
 
-# <video width="1280" controls>
-#   <source src="../../public/images/kolors-logo.mp4" type="video/mp4">
-#   Your browser does not support the video tag.
-# </video>
 ---
-Welcome to the **Kwai-Kolors** team blog space. We will continually update with our team's latest works and open-source models. Stay tuned!
+Welcome to the **Kwai-Kolors** team blog space. We will continually update with our latest works. Please stay tuned! Access our latest models on [Kolors Platform](https://kolors.kuaishou.com/), [Github Page](https://github.com/Kwai-Kolors) and [Huggingface Page](https://huggingface.co/Kwai-Kolors).
